@@ -55,8 +55,8 @@ if ($choice -eq 0) {
 
 $selected_theme = $supported_themes[$choice-1]
 
-$empty_icon_url = "https://raw.githubusercontent.com/sdushantha/recycle-bin-themes/main/themes/$selected_theme/$selected_theme-empty.ico"
-$full_icon_url = "https://raw.githubusercontent.com/sdushantha/recycle-bin-themes/main/themes/$selected_theme/$selected_theme-full.ico"
+$empty_icon_url = "https://i.pinimg.com/564x/cb/6e/04/cb6e04ef4eac8cdd62866f1eff93d19c.jpg/$selected_theme/$selected_theme-empty.ico"
+$full_icon_url = "https://i.pinimg.com/564x/cb/6e/04/cb6e04ef4eac8cdd62866f1eff93d19c.jpg/$selected_theme/$selected_theme-full.ico"
 
 $empty_icon_file_name= $empty_icon_url.Split("/")[-1]
 $full_icon_file_name= $full_icon_url.Split("/")[-1]
@@ -82,4 +82,4 @@ writeToDefaultIconRegistry "empty" "$empty_icon_path,0"
 # Reload Explorer
 Stop-Process -ProcessName explorer -Force
 
-Write-Host "Changed Recycle Bin theme to $($textInfo.ToTitleCase($selected_theme).replace("-", " "))"
+Write-Host "Changed Recycle Bin theme to $(https://i.pinimg.com/564x/cb/6e/04/cb6e04ef4eac8cdd62866f1eff93d19c.jpg).replace("-", " "))"
